@@ -1,25 +1,24 @@
 # Installation
 
+# Require
+[UV](https://docs.astral.sh/uv/)
+
 ## How to install
 ### linux
 ```bash
-1. git clone https://github.com/lainsec/rchan
+1. git clone https://github.com/SevenProxy/rchan
 2. cd rchan
-3. python3 -m venv rchanenv
-4. source rchanenv/bin/activate
-5. pip install -r requirements.txt
+3. uv sync
 ```
 ### windows
 ```bash
-1. git clone https://github.com/lainsec/rchan
+1. git clone https://github.com/SevenProxy/rchan
 2. cd rchan
-3. python3 -m venv rchanenv
-4. rchanenv\Scripts\activate.bat
-5. pip install -r requirements.txt python-magic-bin
+3. uv sync
 ```
 ## How to use
 ```bash
-python3 app.py
+uv run app.py
 `The first account will automatically recive OWNER permissions.`
 ```
 
@@ -45,6 +44,7 @@ python3 app.py
 - [X] Server-side text decoration for posts.
 - [x] Spoiler and filename strip (poster's choice) 
 - [x] Anti-spam with built-in toggleable captcha per board, timeout and evade ban system.
+- [x] UV An extremely fast Python package and project manager, written in Rust.
 
 # License
 GNU AGPLv3, see [LICENSE](https://github.com/lainsec/rchan/blob/master/LICENSE)
